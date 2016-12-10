@@ -1,0 +1,23 @@
+{
+  "name": "bot",
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "private": true,
+  "main": "bot.js",
+  "engines": {
+    "node": ">= 6"
+  },
+  "scripts": {
+    "start": "nf start"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "shrike": "^0.5.0",
+    "shrike-utils": "^0.2.0"
+  },
+  "devDependencies": {
+    "foreman": "^2.0.0"
+  }
+}
