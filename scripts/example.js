@@ -1,3 +1,13 @@
+const help = {
+  title: 'Example',
+  description: [
+    '`bot ping` pong を返す',
+    '`bot count` 数字を数える',
+    '毎朝7:30に「Good Morning!!」とつぶやく',
+    'HTTP で GET /sayfoo を叩くと「foo!」とつぶやく',
+  ],
+};
+
 module.exports = (bot) => {
 
   bot.respond(/^ping$/i, (msg) => {
@@ -21,4 +31,6 @@ module.exports = (bot) => {
     res.send(200);
   });
 
-}
+};
+
+module.exports.help = help;
